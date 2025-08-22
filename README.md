@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Creax - 音楽制作マッチングプラットフォーム
+
+## 概要
+クライアントとクリエーターを繋ぐ音楽制作マッチングサービス
+
+## 技術スタック
+- Frontend: Next.js 14, TypeScript, Tailwind CSS
+- Backend: (Phase1で実装予定)
+- Database: (Phase1で実装予定)
+
+## 開発環境のセットアップ
+\```bash
+npm install
+npm run dev
+\```
+
+## 開発フェーズ
+- Phase 1: 基本マッチング機能（開発中）
+- Phase 2: 楽曲販売機能
+- Phase 3: ライブ配信機能
+- Phase 4: マイルーム機能

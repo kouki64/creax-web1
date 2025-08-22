@@ -20,7 +20,7 @@ export default function Header() {
             
             {/* ナビゲーション */}
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-creax-orange transition">
+              <a href="/projects" className="text-gray-700 hover:text-creax-orange transition">
                 案件を探す
               </a>
               <a href="#" className="text-gray-700 hover:text-creax-orange transition">
