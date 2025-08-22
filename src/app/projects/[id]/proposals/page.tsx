@@ -166,16 +166,13 @@ export default function ProposalsListPage() {
       }
     })
 
-  const handleAcceptProposal = (proposalId: string) => {
-    if (confirm('この提案を採用しますか？')) {
-      // TODO: API呼び出し
-      setProposals(prev => prev.map(p => ({
-        ...p,
-        status: p.id === proposalId ? 'accepted' : p.status === 'accepted' ? 'pending' : p.status
-      })))
-      alert('提案を採用しました。')
-    }
+// 提案を採用した後のリダイレクト
+const handleAcceptProposal = (proposalId: string) => {
+  if (confirm('この提案を採用しますか？')) {
+    // 採用処理後、決済画面へ遷移
+    router.push(`/dashboard/client/projects/${projectId}/payment`)
   }
+}
 
   const toggleShortlist = (proposalId: string) => {
     setProposals(prev => prev.map(p => 
