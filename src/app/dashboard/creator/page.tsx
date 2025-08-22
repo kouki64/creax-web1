@@ -136,7 +136,7 @@ export default function CreatorDashboard() {
                 <Link href="/dashboard/creator" className="text-creax-orange font-medium">
                   ダッシュボード
                 </Link>
-                <Link href="#" className="text-gray-700 hover:text-creax-orange transition">
+                <Link href="/search" className="text-gray-700 hover:text-creax-orange transition">
                   案件を探す
                 </Link>
                 <Link href="#" className="text-gray-700 hover:text-creax-orange transition">
