@@ -446,6 +446,13 @@ export default function ProjectDetailPage() {
                 >
                   提案を作成する
                 </Link>
+                {/* 新規追加 */}
+                <Link
+                  href="/messages"
+                  className="block w-full px-6 py-3 bg-white text-[#ff6232] border border-[#ff6232] text-center font-medium rounded-lg hover:bg-orange-50 transition-colors"
+                >
+                  質問する
+                </Link>                
                 <button className="w-full px-6 py-3 bg-white text-[#ff6232] border border-[#ff6232] font-medium rounded-lg hover:bg-orange-50 transition-colors">
                   お気に入りに追加
                 </button>

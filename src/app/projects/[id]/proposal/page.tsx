@@ -442,13 +442,11 @@ export default function ProposalCreatePage() {
                       <div className="mt-4 p-2 bg-gray-50 rounded flex items-center justify-between">
                         <span className="text-sm text-gray-700">{attachmentFile.name}</span>
                         <button
-                          type="button"
-                          onClick={() => setAttachmentFile(null)}
-                          className="text-red-500 hover:text-red-700"
+                        type="button"
+                        onClick={() => setAttachmentFile(null)}
+                        className="text-red-600 hover:text-red-800 text-sm"
                         >
-                          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                          </svg>
+                        削除
                         </button>
                       </div>
                     )}
@@ -463,15 +461,20 @@ export default function ProposalCreatePage() {
                   >
                     キャンセル
                   </Link>
-                  <button
-                    type="submit"
-                    disabled={submitting}
-                    className={`px-6 py-2 bg-[#ff6232] text-white rounded-lg hover:bg-[#ff8a5b] transition-colors ${
-                      submitting ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                  >
-                    {submitting ? '送信中...' : '提案を送信'}
-                  </button>
+                <button
+                type="submit"
+                disabled={submitting}
+                className="px-6 py-2 bg-[#ff6232] text-white rounded-lg hover:bg-[#ff8a5b] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+                >
+                {submitting ? (
+                    <>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    <span>送信中...</span>
+                    </>
+                ) : (
+                    <span>提案を送信</span>
+                )}
+                </button>
                 </div>
               </form>
             </div>

@@ -112,7 +112,7 @@ export default function ClientDashboard() {
                 <Link href="#" className="text-gray-700 hover:text-creax-orange transition">
                   案件管理
                 </Link>
-                <Link href="#" className="text-gray-700 hover:text-creax-orange transition">
+                <Link href="/messages" className="text-gray-700 hover:text-creax-orange transition">
                   メッセージ
                 </Link>
                 <Link href="#" className="text-gray-700 hover:text-creax-orange transition">
